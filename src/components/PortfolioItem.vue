@@ -26,7 +26,7 @@ $lightgray: rgba(29, 29, 29, 0.253);
 
 a {
   text-decoration: none;
-  font-size: 40px;
+  font-size: 30px;
   color: white;
 }
 .portfolio-item {
@@ -64,9 +64,11 @@ a {
     }
     &.pizza {
       background-image: url("../assets/python-pizza.jpg");
-      background-size: contain;
+      background-size: cover;
       background-position: center;
-      padding-bottom: 50px;
+      background-repeat: no-repeat;
+      padding-top: 80px;
+      background-position: 50% 50%;
     }
   }
   &.tall {

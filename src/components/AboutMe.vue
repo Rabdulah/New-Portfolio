@@ -52,6 +52,11 @@ p{
   flex-direction: column;
   height: 100%;
   padding: 50px;
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  &.container::-webkit-scrollbar {
+    display: none;
+}
 }
 .emphatic-break {
   &.horizontal {
@@ -67,11 +72,13 @@ p{
   &.vertical {
     height: 12px;
     width: 2px;
+    margin-bottom: 18px;
     border: 1px solid red;
     background-color: red;
   }
 }
 .grid {
   height: 100%;
+  max-height: 40vh;
 }
 </style>
