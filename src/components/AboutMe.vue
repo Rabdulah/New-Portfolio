@@ -10,6 +10,10 @@
       <p>
         {{ $t("personal.aboutMe") }}
       </p>
+    </div>
+    <div>
+      <!-- <hr class="emphatic-break vertical" /> -->
+      <SocialBar />
       <hr class="emphatic-break vertical" />
     </div>
     <div class="grid">
@@ -19,8 +23,12 @@
 </template>
 
 <script>
+import SocialBar from "./SocialBar";
 export default {
   name: "AboutMe",
+  components: {
+    SocialBar,
+  },
 };
 </script>
 
@@ -41,10 +49,11 @@ h3 {
     font-style: italic;
   }
 }
-p{
-  font-family: 'Open Sans', sans-serif;
+p {
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
+  margin-bottom: 12px;
 }
 .container {
   box-sizing: border-box;
@@ -56,7 +65,7 @@ p{
   -ms-overflow-style: none;
   &.container::-webkit-scrollbar {
     display: none;
-}
+  }
 }
 .emphatic-break {
   &.horizontal {
