@@ -1,14 +1,14 @@
 <template>
-  <div class="flex-container">
-    <div class="run-shot">
-      <!-- <div class="overlay"/> -->
-    </div>
-    <div class="who-am-i">
-      <AboutMe>
+  <div>
+    <div class="flex-container">
+      <!-- <div class="run-shot"></div> -->
+      <div class="who-am-i">
+        <AboutMe>
           <PortfolioGrid></PortfolioGrid>
-      </AboutMe>
+        </AboutMe>
+      </div>
     </div>
-    <!-- <h1>hello im home</h1> -->
+    <div class="opaque-overlay" />
   </div>
 </template>
 
@@ -18,7 +18,7 @@ import PortfolioGrid from "../components/PortfolioGrid";
 export default {
   components: {
     AboutMe,
-    PortfolioGrid
+    PortfolioGrid,
   },
 };
 </script>
@@ -26,30 +26,38 @@ export default {
 <style lang="scss">
 .flex-container {
   display: flex;
-}
-.run-shot {
-  width: 50vw;
   height: 100vh;
-  background: url("../assets/SprintStartVibrant.jpg");
+  background: url("../assets/sprint-start-wide.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
-  background-position: 74% 40%;
+  background-position: 100% 40%;
 }
-.overlay {
+// .run-shot {
+//     width: 50vw;
+//     height: 100vh;
+//     background: url("../assets/sprint-start-vibrant.jpg");
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     background-attachment: initial;
+//     background-position: 74% 40%;
+// }
+.opaque-overlay {
+  // Work around to get half the background image opaque without casscading to text
   z-index: 1;
-  height: 100%;
-  width: 50%;
-  position: fixed;
-  overflow: auto;
-  top: 0px;
-  left: 0px;
-  background: rgba(0, 0, 0, 0.6); /*can be anything, of course*/
-}
-.who-am-i {
   width: 50vw;
   height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0.7;
   background: white;
+}
+.who-am-i {
+  z-index: 2; // Making sure its above opaque-overlay
+  width: 50vw;
+  height: 100vh;
+  margin-left: 50%;
 }
 body {
   margin: 0;
