@@ -25,6 +25,7 @@ export default {
 i {
   color: black;
   margin: 0 5px 0 5px;
+  font-size: 30px;
 }
 .social-bar {
   text-align: center;

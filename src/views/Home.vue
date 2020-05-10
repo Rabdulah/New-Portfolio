@@ -1,7 +1,6 @@
 <template>
   <div>
     <div class="flex-container">
-      <!-- <div class="run-shot"></div> -->
       <div class="who-am-i">
         <AboutMe>
           <PortfolioGrid></PortfolioGrid>
@@ -31,21 +30,12 @@ export default {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: initial;
-  background-position: 100% 40%;
+  background-position: 50% 40%;
 }
-// .run-shot {
-//     width: 50vw;
-//     height: 100vh;
-//     background: url("../assets/sprint-start-vibrant.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-attachment: initial;
-//     background-position: 74% 40%;
-// }
 .opaque-overlay {
   // Work around to get half the background image opaque without casscading to text
   z-index: 1;
-  width: 50vw;
+  width: 100vw;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -55,11 +45,26 @@ export default {
 }
 .who-am-i {
   z-index: 2; // Making sure its above opaque-overlay
-  width: 50vw;
   height: 100vh;
-  margin-left: 50%;
 }
 body {
   margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .who-am-i {
+    //margin-left: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .who-am-i {
+    width: 50vw;
+    margin-left: 50%;
+  }
+  .opaque-overlay {
+    width: 50vw;
+  }
+  .flex-container {
+    background-position: 100% 40%;
+  }
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <a :href="link" class="portfolio-item" :class="classType" target="_blank">{{
-    title
-  }}</a>
+  <a :href="link" class="portfolio-item" :class="classType" target="_blank"
+    >{{ title }}</a
+  >
 </template>
 
 <script>
@@ -22,11 +22,9 @@ export default {
 </script>
 
 <style lang="scss">
-$lightgray: rgba(29, 29, 29, 0.253);
-
+$lightgray: rgba(29, 29, 29, 0.562);
 a {
   text-decoration: none;
-  font-size: 30px;
   color: white;
 }
 .portfolio-item {
@@ -67,7 +65,6 @@ a {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      padding-top: 80px;
       background-position: 50% 50%;
     }
   }
@@ -78,7 +75,6 @@ a {
       background-image: url("../assets/home-share2.jpg");
       background-size: cover;
       background-position: center;
-      padding-bottom: 140px;
     }
   }
   &:hover {

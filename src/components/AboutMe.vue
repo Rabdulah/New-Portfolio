@@ -12,7 +12,6 @@
       </p>
     </div>
     <div>
-      <!-- <hr class="emphatic-break vertical" /> -->
       <SocialBar />
       <hr class="emphatic-break vertical" />
     </div>
@@ -40,7 +39,7 @@ h3 {
   margin: 0;
   &.title {
     font-weight: bold;
-    font-size: 48px;
+    //font-size: 48px;
   }
   &.subtitle {
     margin-bottom: 5px;
@@ -51,7 +50,7 @@ h3 {
 }
 p {
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  //font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
 }
@@ -60,7 +59,7 @@ p {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 50px;
+  padding: 35px;
   overflow-y: scroll;
   -ms-overflow-style: none;
   &.container::-webkit-scrollbar {
@@ -88,6 +87,58 @@ p {
 }
 .grid {
   height: 100%;
-  max-height: 40vh;
+}
+@media screen and (max-width: 767px){
+    .title{
+    font-size: 34px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title{
+    font-size: 32px;
+  }
+  .subtitle{
+    font-size: 20px;
+  }
+  .blurb{
+    font-size: 14px;
+  }
+  p {
+    font-size: 14px;
+  }
+  i {
+    font-size: 24px;
+  }
+  a {
+    font-size: 24px;
+  }
+  .container{
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  p {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title{
+    font-size: 48px;
+  }
+  .subtitle{
+    font-size: 24px;
+  }
+  .blurb{
+    font-size: 19px;
+  }
+  p {
+    font-size: 18px;
+  }
+  i {
+    font-size: 30px;
+  }
+  a {
+    font-size: 24px;
+  }
 }
 </style>

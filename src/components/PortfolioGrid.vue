@@ -2,7 +2,7 @@
   <div class="portfolio-grid">
     <PortfolioItem link="#" classType="rect nasa" title="Nasa"></PortfolioItem>
     <PortfolioItem link="#" classType="tall home" title="HomeShare"></PortfolioItem>
-    <PortfolioItem link="#" classType="rect pizza" title="Python Pizza Script"></PortfolioItem>
+    <PortfolioItem link="#" classType="rect pizza" title="Python Pizza"></PortfolioItem>
     <PortfolioItem link="#" classType="wide hack" title="HackerNews Clone"></PortfolioItem>
     <PortfolioItem link="#" classType="small" title="Tic-Tac-Toe"></PortfolioItem>
   </div>
