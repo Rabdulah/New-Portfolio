@@ -87,6 +87,7 @@ p {
 }
 .grid {
   height: 100%;
+  min-height: 200px;
 }
 @media screen and (max-width: 767px){
     .title{
