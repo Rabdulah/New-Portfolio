@@ -1,7 +1,5 @@
 <template>
-  <a :href="link" class="portfolio-item" :class="classType" target="_blank"
-    >{{ title }}</a
-  >
+  <a :href="link" class="portfolio-item" :class="classType" target="_blank">{{ title }}</a>
 </template>
 
 <script>
@@ -9,15 +7,15 @@ export default {
   name: "PortfolioItem",
   props: {
     link: {
-      type: String,
+      type: String
     },
     classType: {
-      type: String,
+      type: String
     },
     title: {
-      type: String,
-    },
-  },
+      type: String
+    }
+  }
 };
 </script>
 
@@ -26,6 +24,7 @@ $lightgray: rgba(29, 29, 29, 0.562);
 a {
   text-decoration: none;
   color: white;
+  font-family: "Open Sans", sans-serif;
 }
 .portfolio-item {
   display: flex;
@@ -59,6 +58,11 @@ a {
       color: white;
       background-image: url("../assets/nasa.jpg");
       background-position: 10% 35%;
+      // Temporarily here to disable the NASA square until it's done
+      &:hover {
+        background-blend-mode: multiply;
+        transform: none;
+      }
     }
     &.pizza {
       background-image: url("../assets/python-pizza.jpg");

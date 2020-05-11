@@ -1,10 +1,24 @@
 <template>
   <div class="portfolio-grid">
-    <PortfolioItem link="#" classType="rect nasa" title="Nasa"></PortfolioItem>
+    <!-- <PortfolioItem link="#" classType="rect nasa" title="Under Construction..."></PortfolioItem> 
+    Temporarily breaking DRY practices so we can have custom <a> tag without href. Only until this project is complete! -->
+    <a class="portfolio-item rect nasa">Under Construction</a>
     <PortfolioItem link="#" classType="tall home" title="HomeShare"></PortfolioItem>
-    <PortfolioItem link="#" classType="rect pizza" title="Python Pizza"></PortfolioItem>
-    <PortfolioItem link="#" classType="wide hack" title="HackerNews Clone"></PortfolioItem>
-    <PortfolioItem link="#" classType="small" title="Tic-Tac-Toe"></PortfolioItem>
+    <PortfolioItem
+      link="https://github.com/Rabdulah/PizzaPyRobot"
+      classType="rect pizza"
+      title="Python Pizza"
+    ></PortfolioItem>
+    <PortfolioItem
+      link="https://rabdulah.github.io/HackerNewsClone/#/"
+      classType="wide hack"
+      title="HackerNews Clone"
+    ></PortfolioItem>
+    <PortfolioItem
+      link="https://rabdulah.github.io/Tic-Tac-Toe/#/"
+      classType="small"
+      title="Tic-Tac-Toe"
+    ></PortfolioItem>
   </div>
 </template>
 
@@ -13,8 +27,8 @@ import PortfolioItem from "./PortfolioItem";
 export default {
   name: "PortfolioGrid",
   components: {
-    PortfolioItem,
-  },
+    PortfolioItem
+  }
 };
 </script>
 

@@ -50,11 +50,6 @@ export default {
 body {
   margin: 0;
 }
-@media screen and (max-width: 767px) {
-  .who-am-i {
-    //margin-left: 50%;
-  }
-}
 @media screen and (min-width: 768px) {
   .who-am-i {
     width: 50vw;
