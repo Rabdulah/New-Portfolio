@@ -6,9 +6,9 @@
     <a href="https://www.linkedin.com/in/ramzi-abdulahi/" target="_blank"
       ><i class="fab fa-linkedin"></i
     ></a>
-    <a href="https://www.instagram.com/ramzes_pharaoh/?hl=en" target="_blank"
+    <!-- <a href="https://www.instagram.com/ramzes_pharaoh/?hl=en" target="_blank"
       ><i class="fab fa-instagram-square"></i
-    ></a>
+    ></a> -->
     <a href="mailto:ramzi_abdulahi@outlook.com" target="_blank"
       ><i class="fas fa-envelope-square"></i
     ></a>

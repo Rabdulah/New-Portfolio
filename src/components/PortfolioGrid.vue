@@ -3,7 +3,7 @@
     <!-- <PortfolioItem link="#" classType="rect nasa" title="Under Construction..."></PortfolioItem> 
     Temporarily breaking DRY practices so we can have custom <a> tag without href. Only until this project is complete! -->
     <a class="portfolio-item rect nasa">Under Construction</a>
-    <PortfolioItem link="#" classType="tall home" title="HomeShare"></PortfolioItem>
+    <PortfolioItem link="https://github.com/Rabdulah/HomeShare" classType="tall home" title="HomeShare"></PortfolioItem>
     <PortfolioItem
       link="https://github.com/Rabdulah/PizzaPyRobot"
       classType="rect pizza"
